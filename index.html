@@ -1,0 +1,277 @@
+index.htmlbash
+
+cat /mnt/user-data/outputs/index.html
+Output
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="qh_IJsUBr1aal3UmcPKUOwj6VH0JsPK_opndzkk2dO0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The BirthTribe Cleveland | Traditional Midwifery Services</title>
+  <meta name="description" content="Empowering births with holistic care, The BirthTribe Cleveland offers expert midwifery services in a supportive community, embracing traditional birth practices."/>
+  <link rel="icon" type="image/png" href="https://cdn.durable.co/blocks/5e0LCGk2m9SjcMDHsG0HxpGiWNx2o1WPUziK4bh2YeU8rOMH5kXmfc0NU70XUPnL.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #faf6f0; --warm-white: #fffdf9; --sage: #7a8c6e; --sage-dark: #5a6b4f;
+      --terracotta: #c17a5a; --deep: #2c2416; --mid: #5c4f3a; --light: #d4c8b5;
+      --font-display: 'Cormorant Garamond', Georgia, serif; --font-body: 'Jost', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--cream); color: var(--deep); font-weight: 300; line-height: 1.7; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,246,240,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(212,200,181,0.4); padding: 16px 5%; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 48px; object-fit: contain; cursor: pointer; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--mid); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400; transition: color 0.2s; cursor: pointer; }
+    .nav-links a:hover, .nav-links a.active { color: var(--terracotta); }
+    .page { display: none; }
+    .page.active { display: block; }
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; padding: 120px 5% 80px; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('https://cdn.durable.co/blocks/2caq9EuuUgF4amLbBME98h7BtyrpiqXGTtnwMMWPZIZBkqXOhHNfok76Qnt4TeEU.jpg'); background-size: cover; background-position: center; filter: brightness(0.45); }
+    .hero-content { position: relative; z-index: 2; max-width: 780px; }
+    .hero-eyebrow { font-size: 0.78rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--light); margin-bottom: 24px; }
+    .hero h1 { font-family: var(--font-display); font-size: clamp(3rem, 7vw, 6rem); font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 28px; }
+    .hero-tagline { font-family: var(--font-display); font-style: italic; font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: rgba(255,255,255,0.8); margin-bottom: 48px; }
+    .btn { display: inline-block; padding: 16px 44px; font-family: var(--font-body); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; border: 1px solid currentColor; transition: all 0.3s; cursor: pointer; background: none; }
+    .btn-light { color: #fff; border-color: rgba(255,255,255,0.6); }
+    .btn-light:hover { background: #fff; color: var(--deep); }
+    .btn-terracotta { color: var(--terracotta); border-color: var(--terracotta); }
+    .btn-terracotta:hover { background: var(--terracotta); color: #fff; }
+    section { padding: 100px 5%; }
+    .section-label { font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); margin-bottom: 16px; }
+    .section-title { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.2; color: var(--deep); margin-bottom: 24px; }
+    .section-body { font-size: 1rem; color: var(--mid); max-width: 640px; line-height: 1.8; }
+    .about { background: var(--warm-white); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .about-img { aspect-ratio: 4/5; object-fit: cover; width: 100%; }
+    .testimonials { background: var(--deep); color: #fff; text-align: center; }
+    .testimonials .section-title { color: #fff; }
+    .testimonials .section-label { color: var(--light); }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
+    .testimonial-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 40px 32px; text-align: left; }
+    .testimonial-card p { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; line-height: 1.7; color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .testimonial-card .author { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 60px; }
+    .service-card { background: var(--warm-white); border: 1px solid var(--light); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(44,36,22,0.1); }
+    .service-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .service-card-body { padding: 32px; }
+    .service-card-body h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: 8px; color: var(--deep); }
+    .service-price { font-size: 1.1rem; color: var(--terracotta); margin-bottom: 16px; font-weight: 400; }
+    .service-card-body p { font-size: 0.9rem; color: var(--mid); margin-bottom: 20px; }
+    .service-features { list-style: none; margin-bottom: 24px; }
+    .service-features li { font-size: 0.85rem; color: var(--mid); padding: 8px 0; border-bottom: 1px solid var(--light); display: flex; align-items: center; gap: 10px; }
+    .service-features li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+    .popular-badge { display: inline-block; background: var(--sage); color: #fff; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 12px; margin-bottom: 12px; }
+    .faq { background: var(--warm-white); }
+    .faq-list { max-width: 780px; margin: 60px auto 0; }
+    .faq-item { border-bottom: 1px solid var(--light); }
+    .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 28px 0; font-family: var(--font-display); font-size: 1.2rem; font-weight: 400; color: var(--deep); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .faq-question .icon { font-size: 1.5rem; color: var(--sage); transition: transform 0.3s; flex-shrink: 0; }
+    .faq-answer { display: none; padding: 0 0 28px; color: var(--mid); font-size: 0.95rem; line-height: 1.8; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .icon { transform: rotate(45deg); }
+    .team-grid-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; max-width: 1100px; margin: 0 auto 48px; }
+    .team-grid-bottom { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px; max-width: 740px; margin: 48px auto 0; }
+    .team-card { text-align: center; }
+    .team-card-img-wrap { position: relative; margin-bottom: 28px; overflow: hidden; }
+    .team-card-img-wrap::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--light); pointer-events: none; }
+    .team-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; transition: transform 0.5s; }
+    .team-card:hover img { transform: scale(1.04); }
+    .team-card-role { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px; }
+    .team-card h3 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; color: var(--deep); margin-bottom: 16px; }
+    .divider { width: 40px; height: 1px; background: var(--sage); margin: 16px auto; }
+    .team-card p { font-size: 0.9rem; color: var(--mid); line-height: 1.8; text-align: left; }
+    .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; max-width: 1100px; margin: 0 auto; }
+    .contact-info h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 300; margin-bottom: 24px; }
+    .contact-info > p { color: var(--mid); margin-bottom: 40px; line-height: 1.8; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 28px; }
+    .contact-detail-icon { width: 40px; height: 40px; background: var(--sage); display: flex; align-items: center; justify-content: center; color: #fff; flex-shrink: 0; }
+    .contact-detail-text strong { display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage); margin-bottom: 4px; font-weight: 400; }
+    .contact-detail-text span { color: var(--mid); font-size: 0.95rem; }
+    .contact-form-wrap { background: var(--warm-white); border: 1px solid var(--light); padding: 48px; }
+    .form-group { margin-bottom: 28px; }
+    .form-group label { display: block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--sage); margin-bottom: 10px; font-weight: 400; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; background: var(--cream); border: 1px solid var(--light); color: var(--deep); font-family: var(--font-body); font-size: 0.95rem; font-weight: 300; outline: none; transition: border-color 0.2s; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--sage); }
+    .form-group textarea { height: 140px; resize: vertical; }
+    .btn-submit { width: 100%; padding: 18px; background: var(--deep); color: #fff; border: none; font-family: var(--font-body); font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: background 0.3s; }
+    .btn-submit:hover { background: var(--terracotta); }
+    .success-msg { display: none; background: var(--sage); color: #fff; padding: 20px; text-align: center; margin-top: 20px; font-size: 0.9rem; }
+    .cta { background: var(--sage-dark); color: #fff; text-align: center; padding: 120px 5%; }
+    .cta .section-title { color: #fff; max-width: 600px; margin: 0 auto 16px; }
+    .cta .section-body { color: rgba(255,255,255,0.75); margin: 0 auto 48px; text-align: center; }
+    .page-hero { padding: 160px 5% 80px; background: var(--deep); text-align: center; }
+    .page-hero p { font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--light); margin-bottom: 16px; }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 300; color: #fff; }
+    footer { background: var(--deep); color: rgba(255,255,255,0.5); text-align: center; padding: 40px 5%; font-size: 0.85rem; }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; cursor: pointer; }
+    footer a:hover { color: #fff; }
+    @media (max-width: 900px) {
+      .about, .contact-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .testimonial-grid, .services-grid { grid-template-columns: 1fr; }
+      .team-grid-top, .team-grid-bottom { grid-template-columns: 1fr; max-width: 480px; }
+      .contact-form-wrap { padding: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" onclick="showPage('home')">
+      <img src="https://cdn.durable.co/blocks/5e0LCGk2m9SjcMDHsG0HxpGiWNx2o1WPUziK4bh2YeU8rOMH5kXmfc0NU70XUPnL.png" alt="The Birth Tribe Cleveland"/>
+    </a>
+    <ul class="nav-links">
+      <li><a onclick="showPage('services')" id="nav-services">Services</a></li>
+      <li><a onclick="showPage('team')" id="nav-team">Our Team</a></li>
+      <li><a onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Traditional Midwifery · Cleveland, Ohio</p>
+        <h1>Welcome To The Birth Tribe Cleveland</h1>
+        <p class="hero-tagline">Cultivating a sacred space for families to embrace birth in its natural form.</p>
+        <button class="btn btn-light" onclick="showPage('services')">Explore Our Services</button>
+      </div>
+    </div>
+    <section class="about">
+      <img class="about-img" src="https://cdn.durable.co/blocks/34LizZCNt82TXEEM8s9k3mQPMLdIwDWZqpg7GbXfPatrCbwpwyH19p0SfzZaERRN.jpg" alt="Compassionate Birthwork Care"/>
+      <div>
+        <p class="section-label">Our Philosophy</p>
+        <h2 class="section-title">Experience Compassionate Birthwork Care</h2>
+        <p class="section-body">At The Birth Tribe, we hold space for birth as a ceremony — sacred, safe, and deeply personal. Through traditional midwifery care, we empower families with the knowledge, support, and reverence needed to experience birth in its most natural and transformative form.</p>
+        <br/><br/>
+        <p class="section-body">The BirthTribe Cleveland is dedicated to supporting families with compassionate birthwork and traditional midwifery services. Located in the heart of Cleveland, Ohio, we embrace each birth journey, offering personalized care and deep-rooted expertise.</p>
+      </div>
+    </section>
+    <section class="testimonials">
+      <p class="section-label">What Families Say</p>
+      <h2 class="section-title">Birth Stories</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card"><p>"The BirthTribe Cleveland provided an incredible birthing experience. Their expertise and care were unmatched, making me feel empowered and supported throughout."</p><span class="author">— Isabella R.</span></div>
+        <div class="testimonial-card"><p>"I felt confident, calm, and supported throughout my birthing experience!"</p><span class="author">— Brittiany B.</span></div>
+        <div class="testimonial-card"><p>"The BirthTribe Cleveland was a blessing! Their warm support and deep knowledge made my birthing experience truly special."</p><span class="author">— Sa'Rayah C.</span></div>
+      </div>
+    </section>
+    <section style="background:var(--cream)">
+      <p class="section-label">What We Offer</p>
+      <h2 class="section-title">Personalized Birthwork Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/33YUCnsWrfFkp06j7ipCXH4CVVvpe5YG0oxwfteMulfG03UquZtIKITSBEiztSSm.jpg" alt="Initial Consultation"/><div class="service-card-body"><h3>Initial Consultation</h3><p class="service-price">$150</p><p>Comprehensive assessment and personalized birth plan.</p><button class="btn btn-terracotta" onclick="showPage('services')">More info</button></div></div>
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/315IDOsKrcKpODDyNoHYOZsHEtOm0tSaeHfMhzcBOwwCO5jubCLbgd4UAJForlXY.png" alt="Complete Birth Package"/><div class="service-card-body"><span class="popular-badge">Popular</span><h3>Complete Birth Package</h3><p class="service-price">$6,000</p><p>Full prenatal, birth, and postpartum support.</p><button class="btn btn-terracotta" onclick="showPage('services')">More info</button></div></div>
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/faJvGWwlUXrBHgVmXuZdAYICW13qgNiQmqDlSDHoRhGWfENImvspxQ83mXEkys79.png" alt="Postpartum Support"/><div class="service-card-body"><h3>Postpartum Family Support</h3><p class="service-price">$550</p><p>Support for families after childbirth.</p><button class="btn btn-terracotta" onclick="showPage('services')">More info</button></div></div>
+      </div>
+    </section>
+    <section class="faq">
+      <p class="section-label" style="text-align:center">Questions</p>
+      <h2 class="section-title" style="text-align:center">Explore Our Birthwork FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question">What services does The BirthTribe Cleveland offer?<span class="icon">+</span></button><div class="faq-answer">We provide comprehensive birthwork services including prenatal care, home births, and postpartum support, focusing on traditional midwifery practices.</div></div>
+        <div class="faq-item"><button class="faq-question">Do you offer home birth services?<span class="icon">+</span></button><div class="faq-answer">Yes, we specialize in safe, supportive home births with personalized care throughout the birthing process.</div></div>
+        <div class="faq-item"><button class="faq-question">How can I schedule a consultation?<span class="icon">+</span></button><div class="faq-answer">Contact us via the form on our Contact page. Please allow 24–48 hours for a response.</div></div>
+        <div class="faq-item"><button class="faq-question">Are your services covered by insurance?<span class="icon">+</span></button><div class="faq-answer">Typical insurance plans usually do not cover traditional midwifery services. Please contact your provider for specific information.</div></div>
+        <div class="faq-item"><button class="faq-question">What areas in Cleveland do you serve?<span class="icon">+</span></button><div class="faq-answer">We proudly serve the entire Cleveland area and surrounding communities.</div></div>
+      </div>
+    </section>
+    <section class="cta">
+      <p class="section-label" style="color:rgba(255,255,255,0.5)">Get Started</p>
+      <h2 class="section-title">Nurture Your Birth Experience</h2>
+      <p class="section-body">Discover compassionate, personalized birthwork and traditional midwifery services with The BirthTribe Cleveland.</p>
+      <button class="btn btn-light" onclick="showPage('contact')">Schedule a Consultation</button>
+    </section>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="page" id="page-services">
+    <div class="page-hero"><p>What We Offer</p><h1>Personalized Birthwork Services</h1></div>
+    <section style="background:var(--cream)">
+      <div class="services-grid">
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/33YUCnsWrfFkp06j7ipCXH4CVVvpe5YG0oxwfteMulfG03UquZtIKITSBEiztSSm.jpg" alt="Initial Consultation"/><div class="service-card-body"><h3>Initial Consultation Package</h3><p class="service-price">$150</p><p>Comprehensive assessment and personalized birth plan tailored for expectant parents.</p><ul class="service-features"><li>Birth plan</li><li>Needs assessment</li><li>Addressing Concerns and Providing Support</li></ul><button class="btn btn-terracotta" onclick="showPage('contact')">Schedule Now</button></div></div>
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/315IDOsKrcKpODDyNoHYOZsHEtOm0tSaeHfMhzcBOwwCO5jubCLbgd4UAJForlXY.png" alt="Complete Birth Package"/><div class="service-card-body"><span class="popular-badge">Most Popular</span><h3>Complete Birth Package</h3><p class="service-price">$6,000</p><p>Includes all features from the Initial Consultation Package along with ongoing prenatal care and support.</p><ul class="service-features"><li>Prenatal visits</li><li>On-call support</li><li>Home visits</li><li>Birth plan</li><li>Needs assessment</li><li>Addressing Concerns and Providing Support</li></ul><button class="btn btn-terracotta" onclick="showPage('contact')">Schedule Now</button></div></div>
+        <div class="service-card"><img src="https://cdn.durable.co/blocks/faJvGWwlUXrBHgVmXuZdAYICW13qgNiQmqDlSDHoRhGWfENImvspxQ83mXEkys79.png" alt="Postpartum Family Support"/><div class="service-card-body"><h3>Postpartum Family Support</h3><p class="service-price">$550</p><p>Comprehensive support for families after childbirth.</p><ul class="service-features"><li>Labor support</li><li>Meal Prep</li><li>Postpartum support</li></ul><button class="btn btn-terracotta" onclick="showPage('contact')">Schedule Now</button></div></div>
+      </div>
+    </section>
+    <section class="cta"><p class="section-label" style="color:rgba(255,255,255,0.5)">Ready to Begin?</p><h2 class="section-title">Nurture Your Birth Experience</h2><p class="section-body">Discover compassionate, personalized birthwork and traditional midwifery services.</p><button class="btn btn-light" onclick="showPage('contact')">Schedule a Consultation</button></section>
+  </div>
+
+  <!-- TEAM -->
+  <div class="page" id="page-team">
+    <div class="page-hero"><p>The People Behind The Care</p><h1>Meet Our Team</h1></div>
+    <section style="background:var(--cream)">
+      <div style="text-align:center;max-width:640px;margin:0 auto 80px"><p class="section-label">Who We Are</p><h2 class="section-title">Experienced, Compassionate Birthworkers</h2></div>
+      <div class="team-grid-top">
+        <div class="team-card"><div class="team-card-img-wrap"><img src="https://cdn.durable.co/blocks/324gio8mQQBwuMRDl2cJli5bSQzDvq4HPuig6AKCsN7EWSpn3sgTWwUTaw2ii34W.jpg" alt="Nakia Smith"/></div><p class="team-card-role">Senior Traditional Midwife</p><h3>Nakia Smith (Five)</h3><div class="divider"></div><p>With eight years of experience as a doula and ten years practicing traditional midwifery, she brings seasoned wisdom and compassionate care to every birth. Having supported over 100 families, she is dedicated to creating natural, meaningful, family-centered birth experiences. Passionate about homesteading, raising chickens, and homeschooling her children, she brings a nurturing spirit into her work.</p></div>
+        <div class="team-card"><div class="team-card-img-wrap"><img src="https://cdn.durable.co/blocks/1avIuxSdbdnArA03QAtfH9Yp4YpuzgfI5GyxfJQVSuxKYD2RkqVlpUKbUzyYeyWA.png" alt="Jade Blair"/></div><p class="team-card-role">Traditional Midwife</p><h3>Jade Blair</h3><div class="divider"></div><p>With four years as a doula and three years practicing traditional midwifery, her journey through birthwork deepened her passion for supporting families through sacred, empowered birth experiences. Known as an "auntie" within the community, she offers nurturing emotional support alongside grounded traditional wisdom. With a background in agriculture and a passion for plant-based meals, she brings earth-centered healing into every family she serves.</p></div>
+        <div class="team-card"><div class="team-card-img-wrap"><img src="https://cdn.durable.co/blocks/2egfJfQ0NS7Vi5Ai6XHBHAITBDT3fVcq38jdC3MGMOgk3x7B5yXzKDkWN5dAGS0d.jpg" alt="Dyese Osaze"/></div><p class="team-card-role">Traditional Midwife</p><h3>Dyese Osaze</h3><div class="divider"></div><p>With over seven years as a doula and as a newly graduated traditional midwife, she is passionate about supporting families through gentle, faith-centered birth experiences. Guided by her Muslim faith, she believes birth is a sacred process. Known for creating peaceful and reassuring spaces, her love for baking, fitness, and cats reflects the nurturing energy she shares with the families she serves.</p></div>
+      </div>
+      <div class="team-grid-bottom">
+        <div class="team-card"><div class="team-card-img-wrap"><img src="https://cdn.durable.co/blocks/32v3FzmMXiLzMqioWUntpWW7wBHrXqS838q3Up7Tk39V4XPjJyWEW5gV1bQr0CMH.jpg" alt="Fatimah El"/></div><p class="team-card-role">Third (3) Year Traditional Midwife Apprentice</p><h3>Fatimah El</h3><div class="divider"></div><p>Through her personal Birth Tribe journey, birthwork and holistic healing ignited a deep passion for supporting families. A Reiki Master and homebirther with a background in data science and birth documentation, she blends spiritual support with detail-centered care. Growing up surrounded by medicine, she always knew she was called to be a healer.</p></div>
+        <div class="team-card"><div class="team-card-img-wrap"><img src="https://cdn.durable.co/blocks/dlUDaCl35TZFLomQVE1q0mPriYR1kSpMHbHCj6KiJx2Rox3GzlcUgatn7sX0qBri.jpg" alt="Anthonyque Turner"/></div><p class="team-card-role">Second (2) Year Traditional Midwife Apprentice</p><h3>Anthonyque Turner (Nyque)</h3><div class="divider"></div><p>Drawing from her background in mental and emotional wellness, she focuses on supporting whole-family healing through balanced nutrition, movement, and herbal blends. Her mantra — "Labor is progressing every day, let's get ready" — reflects her calming approach. Her passions include cooking, astrology, massage therapy, and holistic practices.</p></div>
+      </div>
+    </section>
+    <section class="cta"><p class="section-label" style="color:rgba(255,255,255,0.5)">Get Started</p><h2 class="section-title">Empower Your Birth Journey</h2><p class="section-body">Experience compassionate, personalized birthwork with The BirthTribe Cleveland.</p><button class="btn btn-light" onclick="showPage('contact')">Schedule a Consultation</button></section>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="page" id="page-contact">
+    <div class="page-hero"><p>Reach Out</p><h1>Schedule a Consultation</h1></div>
+    <section style="background:var(--cream)">
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h2>We'd Love to Hear From You</h2>
+          <p>Ready to begin your birth journey? Reach out to discuss your needs or schedule your initial consultation. Please allow 24–48 hours for a response.</p>
+          <div class="contact-detail"><div class="contact-detail-icon">✉</div><div class="contact-detail-text"><strong>Email</strong><span>We'll reply within 24–48 hours.</span></div></div>
+          <div class="contact-detail"><div class="contact-detail-icon">📍</div><div class="contact-detail-text"><strong>Location</strong><span>Cleveland, Ohio and surrounding communities</span></div></div>
+          <div class="contact-detail"><div class="contact-detail-icon">🕐</div><div class="contact-detail-text"><strong>Response Time</strong><span>24–48 hours</span></div></div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contactForm">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required/></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required/></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(216) 000-0000"/></div>
+            <div class="form-group"><label>Service of Interest</label><select><option value="">Select a service...</option><option>Initial Consultation Package ($150)</option><option>Complete Birth Package ($6,000)</option><option>Postpartum Family Support ($550)</option><option>General Inquiry</option></select></div>
+            <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your birth journey..."></textarea></div>
+            <button type="submit" class="btn-submit">Send Message</button>
+            <div class="success-msg" id="successMsg">Thank you! We'll be in touch within 24–48 hours.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 The BirthTribe Cleveland · Cleveland, Ohio · <a onclick="showPage('contact')">Contact Us</a></p>
+  </footer>
+
+  <script>
+    function showPage(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      document.getElementById('page-' + page).classList.add('active');
+      const navEl = document.getElementById('nav-' + page);
+      if (navEl) navEl.classList.add('active');
+      window.scrollTo(0, 0);
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('successMsg').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
